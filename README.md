@@ -1,19 +1,20 @@
 ### npm install
 
-```jsx
-// create-react-app + typescript
+```bash
+# create-react-app + typescript
 npx create-react-app . --template typescript
 
-// styled-component
+# styled-component
 npm install styled-components styled-reset
 npm install @types/styled-components -D
 
-// prettier
-// CRA를 사용하는 경우 eslint는 이미 설치되어있으므로 prettier만 설치해도 된다
+# prettier
+# CRA를 사용하는 경우 eslint는 이미 설치되어있으므로 prettier만 설치해도 된다
 npm install -D prettier
 
-// eslint, eslint-plugin-prettier는 사용하지 말자
-npm install -D @typescript-eslint/parser @typescript-eslint/parser eslint-plugin-react-hooks @typescript-eslint/eslint-plugin eslint-config-prettier
+# eslint, eslint-plugin-prettier는 사용하지 말자
+npm install -D @typescript-eslint/parser @typescript-eslint/parser 
+npm install -D eslint-plugin-react-hooks @typescript-eslint/eslint-plugin eslint-config-prettier
 
 ```
 
