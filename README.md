@@ -1,46 +1,82 @@
-# Getting Started with Create React App
+### npm install
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+```jsx
+// create-react-app + typescript
+npx create-react-app . --template typescript
 
-## Available Scripts
+// styled-component
+npm install styled-components styled-reset
+npm install @types/styled-components -D
 
-In the project directory, you can run:
+// prettier
+// CRA를 사용하는 경우 eslint는 이미 설치되어있으므로 prettier만 설치해도 된다
+npm install -D prettier
 
-### `npm start`
+// eslint, eslint-plugin-prettier는 사용하지 말자
+npm install -D @typescript-eslint/parser @typescript-eslint/parser eslint-plugin-react-hooks @typescript-eslint/eslint-plugin eslint-config-prettier
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### .prettierrc
 
-### `npm test`
+```json
+{
+  "trailingComma": "es5",
+  "tabWidth": 2,
+  "semi": true,
+  "singleQuote": true,
+  "printWidth": 120
+}
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### .eslintrc.js
 
-### `npm run build`
+```js
+module.exports = {
+  parser: '@typescript-eslint/parser',
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  extends: [
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
+    'plugin:@typescript-eslint/recommended',
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    'plugin:import/errors',
+    'plugin:import/warnings',
+    'plugin:import/typescript',
+    'prettier',
+  ],
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
+};
+```
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Reference
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- .esliintrc.js
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+  - [prettier와 eslint를 구분해서 사용하자](https://yrnana.dev/post/2021-03-21-prettier-eslint)
+  - [ESLint 알고 쓰기](https://yrnana.dev/post/2021-09-02-eslint)
+  - [ESLint 설정 살펴보기](https://velog.io/@kyusung/eslint-config-2)
+  - [ESLint & Prettier, Airbnb Style Guide로 설정하기](https://velog.io/@_jouz_ryul/ESLint-Prettier-Airbnb-Style-Guide%EB%A1%9C-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+  - `@typescript-eslint/parser` : Typescript 를 파싱하기 위해 사용
+  - `@typescript-eslint/parser` : React에 관한 린트설정을 지원
+  - `eslint-plugin-react-hooks` : React Hooks의 규칙을 강제하도록 하는 플러그인
+  - `@typescript-eslint/eslint-plugin` : Typescript 관련 린팅규칙을 설정하는 플러그인
+  - `eslint-config-prettier` : prettier와 충돌을 일으키는 ESLint 규칙들을 비활성화 시키는 config
 
-## Learn More
+- prettier
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  - [👩🏻‍💻 리액트 프로젝트에 Prettier 적용하는 방법](https://www.youtube.com/watch?v=T4WnS6stcK8&t=631s)
+  - [React 프로젝트에 Prettier 적용하기](https://leehwarang.github.io/2020/06/24/prettier.html)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- styled-reset
+  - [React : styled-reset](https://velog.io/@daymoon_/React-styled-reset)
+  - [Styled Components 전역 스타일링 (Global Style)](https://www.daleseo.com/styled-components-global-style/)
+  - [[Styled-Components] styled-reset 패키지로 styled-components reset하기](https://wonit.tistory.com/301)
