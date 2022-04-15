@@ -76,6 +76,7 @@ module.exports = {
 
   - [👩🏻‍💻 리액트 프로젝트에 Prettier 적용하는 방법](https://www.youtube.com/watch?v=T4WnS6stcK8&t=631s)
   - [React 프로젝트에 Prettier 적용하기](https://leehwarang.github.io/2020/06/24/prettier.html)
+  - [린트(ESLint)와 프리티어(Prettier)로 협업 환경 세팅하기](https://www.youtube.com/watch?v=Y3kjHM7d3Zo)
 
 - styled-reset
   - [React : styled-reset](https://velog.io/@daymoon_/React-styled-reset)
