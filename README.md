@@ -14,7 +14,7 @@ npm install -D prettier
 
 # eslint, eslint-plugin-prettier는 사용하지 말자
 npm install -D @typescript-eslint/parser @typescript-eslint/parser 
-npm install -D eslint-plugin-react-hooks @typescript-eslint/eslint-plugin eslint-config-prettier
+npm install -D @typescript-eslint/eslint-plugin eslint-config-prettier
 
 ```
 
@@ -38,7 +38,6 @@ module.exports = {
 
   extends: [
     'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
     'plugin:@typescript-eslint/recommended',
 
     'plugin:import/errors',
@@ -67,7 +66,7 @@ module.exports = {
   - [ESLint & Prettier, Airbnb Style Guide로 설정하기](https://velog.io/@_jouz_ryul/ESLint-Prettier-Airbnb-Style-Guide%EB%A1%9C-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0)
 
   - `@typescript-eslint/parser` : Typescript 를 파싱하기 위해 사용
-  - `@typescript-eslint/parser` : React에 관한 린트설정을 지원
+  - `eslint-plugin-react` : React에 관한 린트설정을 지원
   - `eslint-plugin-react-hooks` : React Hooks의 규칙을 강제하도록 하는 플러그인
   - `@typescript-eslint/eslint-plugin` : Typescript 관련 린팅규칙을 설정하는 플러그인
   - `eslint-config-prettier` : prettier와 충돌을 일으키는 ESLint 규칙들을 비활성화 시키는 config
