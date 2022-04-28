@@ -64,11 +64,12 @@ module.exports = {
   - [ESLint 알고 쓰기](https://yrnana.dev/post/2021-09-02-eslint)
   - [ESLint 설정 살펴보기](https://velog.io/@kyusung/eslint-config-2)
   - [ESLint & Prettier, Airbnb Style Guide로 설정하기](https://velog.io/@_jouz_ryul/ESLint-Prettier-Airbnb-Style-Guide%EB%A1%9C-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0)
+  - [React에서 ESLint를 사용해보자](https://velog.io/@do_dadu/ESLint%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EB%B3%B4%EC%9E%90)
 
   - `@typescript-eslint/parser` : Typescript 를 파싱하기 위해 사용
-  - `eslint-plugin-react` : React에 관한 린트설정을 지원
-  - `eslint-plugin-react-hooks` : React Hooks의 규칙을 강제하도록 하는 플러그인
-  - `@typescript-eslint/eslint-plugin` : Typescript 관련 린팅규칙을 설정하는 플러그인
+  - `eslint-plugin-react` : React에 관한 린트설정을 지원 (CRA, 기본설치 되어있다)
+  - `eslint-plugin-react-hooks` : React Hooks의 규칙을 강제하도록 하는 플러그인 (CRA, 기본설치 되어있다)
+  - `@typescript-eslint/eslint-plugin`: Typescript 관련 린팅규칙을 설정하는 플러그인
   - `eslint-config-prettier` : prettier와 충돌을 일으키는 ESLint 규칙들을 비활성화 시키는 config
 
 - prettier
