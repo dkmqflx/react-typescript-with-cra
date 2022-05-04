@@ -10,6 +10,7 @@ npm install @types/styled-components -D
 
 # prettier
 # CRA를 사용하는 경우 eslint는 이미 설치되어있으므로 prettier만 설치해도 된다
+# prettier 설치 대신, extension 으로 적용할 수 있다.
 npm install -D prettier
 
 # eslint, eslint-plugin-prettier는 사용하지 말자
@@ -77,6 +78,7 @@ module.exports = {
   - [👩🏻‍💻 리액트 프로젝트에 Prettier 적용하는 방법](https://www.youtube.com/watch?v=T4WnS6stcK8&t=631s)
   - [React 프로젝트에 Prettier 적용하기](https://leehwarang.github.io/2020/06/24/prettier.html)
   - [린트(ESLint)와 프리티어(Prettier)로 협업 환경 세팅하기](https://www.youtube.com/watch?v=Y3kjHM7d3Zo)
+  - [27. 리액트 개발 할 때 사용하면 편리한 도구들 - Prettier, ESLint, Snippet](https://react.vlpt.us/basic/27-useful-tools.html)
 
 - styled-reset
   - [React : styled-reset](https://velog.io/@daymoon_/React-styled-reset)
