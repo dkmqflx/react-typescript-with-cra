@@ -14,7 +14,7 @@ npm install @types/styled-components -D
 npm install -D prettier
 
 # eslint, eslint-plugin-prettier는 사용하지 말자
-npm install -D @typescript-eslint/parser @typescript-eslint/parser 
+npm install -D @typescript-eslint/parser
 npm install -D @typescript-eslint/eslint-plugin eslint-config-prettier
 
 ```
